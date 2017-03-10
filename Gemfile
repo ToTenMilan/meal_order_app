@@ -5,8 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 gem 'rails',        '5.0.1'
+gem 'omniauth-github'
 gem 'puma',         '3.4.0'
 gem 'sass-rails',   '5.0.6'
 gem 'uglifier',     '3.0.0'
