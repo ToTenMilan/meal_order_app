@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Restaurants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @restaurants.each do |restaurant| %>
+      <tr>
+
+        <td><%= button_to "#{restaurant.name}", orders_path %></td>
+        <td>
+          <select>
+            <option value="ordered">ordered</option>
+            <option value="finalized">finalized</option>
+            <option value="delivered">delivered</option>
+          </select>
+        </td>
+        <td><%= button_to "Review Order" %></td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%= link_to 'Orders History' %>
+<%= link_to 'New Order', new_restaurant_path %>

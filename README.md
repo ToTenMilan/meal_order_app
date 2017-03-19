@@ -1,24 +1,11 @@
-# README
+What is done:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. meal_order_app_mockup.pdf
 
-Things you may want to cover:
+2. data_models.pdf - data structure
 
-* Ruby version
+3. login using GitHub OAuth, according to https://richonrails.com/articles/github-authentication-in-ruby-on-rails
 
-* System dependencies
+4. scaffolds of Restaurant and Order
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+5. buttons in index after login.

@@ -1,5 +1,6 @@
 <% if current_user.blank? %>
-  <h1>Please Sign In</h1>
+  <h1>Super Meal Ordering App</h1>
+  <h2>Please Sign In</h2>
   <%= link_to 'Sign In with Github', '/auth/github' %>
 <% else %>
   <p>
@@ -7,4 +8,6 @@
   </p>
 
   <%= button_to "Sign Out", signout_path, method: :delete %>
+  <%= link_to "Active Orders", restaurants_path %>
+
 <% end %>
